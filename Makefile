@@ -1,4 +1,3 @@
 SRC = main.go
-go:
-	gofmt -w $(SRC)
-	go run $(SRC)
+gods.exe: $(SRC)	
+	go build -o bin/$@ $^
