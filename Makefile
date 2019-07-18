@@ -1,3 +1,6 @@
 SRC = main.go
-gods.exe: $(SRC)	
-	go build -o bin/$@ $^
+
+run: bin/gods$(EXE)
+	./$^
+bin/gods$(EXE): $(SRC)	
+	go build -o $@ $^
