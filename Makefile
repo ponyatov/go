@@ -3,7 +3,8 @@ EDS = bin/eds$(EXE)
 
 run: $(EDS)
 	./$^
-$(EDS): $(SRC)	
+$(EDS): $(SRC)
+	gofmt -w $^
 	go build -o $@ $^
 
 packages: bin/gocode$(EXE)

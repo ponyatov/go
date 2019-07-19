@@ -1,6 +1,6 @@
 # eds/go
 ## Executable Data Structures
-### implemented in Golang for distributed systems
+### implemented in Golang / for distributed systems & IoT /
 
 (c) Dmitry Ponyatov <<dponyatov@gmail.com>> CC BY-NC-ND
 
