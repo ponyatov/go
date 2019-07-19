@@ -1,6 +1,12 @@
 SRC = main.go
+EDS = bin/eds$(EXE)
 
-run: bin/gods$(EXE)
+run: $(EDS)
 	./$^
-bin/gods$(EXE): $(SRC)	
+$(EDS): $(SRC)	
 	go build -o $@ $^
+
+packages: bin/gocode$(EXE)
+bin/gocode$(EXE):
+	go get github.com/nsf/gocode
+

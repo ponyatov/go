@@ -10,6 +10,7 @@ github: https://bitbucket.org/ponyatov/gods
 https://www.ardanlabs.com/blog/2013/06/installing-go-gocode-gdb-and-liteide.html
 
 ```
-go get github.com/nsf/gocode
+$ make packages
+	go get github.com/nsf/gocode
 ```
 
